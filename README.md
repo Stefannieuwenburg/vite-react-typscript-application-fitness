@@ -1,7 +1,24 @@
 # React + TypeScript + Vite
+This template boiler plate provides a application build whit typeScript and React/Vite inside a tailwind project
 
+# Tools
+npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react
+npm i -D @types/react-anchor-link-smooth-scroll@1.0.2 @types/node
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React: https://reactjs.org/
+Typescript: https://www.typescriptlang.org/
+Typescript Types vs Interfaces: https://tinyurl.com/typescripttypesvs...
+Vite: https://tailwindcss.com/docs/guides/vite
+Google Fonts: https://fonts.google.com/
+Tailwind: https://tailwindcss.com/
+Prettier Tailwind Css Plugin: https://github.com/tailwindlabs/prett...
+Prettier Tailwind Css Sorting: https://tailwindcss.com/blog/automati...
+Hero Icons: https://heroicons.com/
+Framer Motion: https://www.framer.com/docs/introduct...
+Form Submit: https://formsubmit.co/
+React Anchor Link smooth Scroll: https://github.com/mauricevancooten/r...
+Cloudflare Pages: https://pages.cloudflare.com/
+
 
 Currently, two official plugins are available:
 

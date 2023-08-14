@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/outline';
+//import { useState } from 'react';
+//import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from "@/assets/Logo.png";
-
+import Link from "./Link";
 
 type Props = {
-    selectedPage: string;
+  selectedPage: string;
   setSelectedPage:(value:string) => void;
 }
 
 
-const Navbar = ({selectedPage,setSelectedPage}:Props): Props) => {
+const Navbar = ({selectedPage,setSelectedPage}: Props) => {
     const flexBetween = "flex items-center justify-between";
   return (
     <nav>

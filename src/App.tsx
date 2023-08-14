@@ -1,11 +1,11 @@
 import Navbar from "@/componenten/navbar";
 import { useState } from "react";
 
-type Props = {
-  isTopOfPage: boolean;
-  selectedPage: SelectedPage;
-  setSelectedPage: (value: SelectedPage) => void;
-};
+// type Props = {
+//   isTopOfPage: boolean;
+//   selectedPage: SelectedPage;
+//   setSelectedPage: (value: SelectedPage) => void;
+// };
 
 const App = () => {
    const [selectedPage, setSelectedPage] = useState<string>("home");

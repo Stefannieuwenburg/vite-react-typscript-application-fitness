@@ -13,12 +13,11 @@ const App = () => {
     SelectedPage.Home
   );
   
-
- return (
+  return (
     <div className="app bg-gray-20 ">
        <Navbar
-         selectedPage={selectedPage}
-       setSelectedPage={setSelectedPage} />
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage} page={""} isMenuToggled={false} isTopOfPage={false}  />
       {/* <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
@@ -30,7 +29,4 @@ const App = () => {
  );
 }
 export default App;
-
-
-
-//1.07
+//1.28

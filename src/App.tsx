@@ -1,10 +1,10 @@
 import Navbar from "@/componenten/navbar";
-//import Home from "@/scenes/home";
+import Home from "@/componenten/home";
 //import OurClasses from "@/scenes/ourClasses";
-//import Benefits from "@/scenes/benefits";
+import Benefits from "@/componenten/benefits";
 //import ContactUs from "@/scenes/contactUs";
 //import Footer from "@/scenes/footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SelectedPage } from "@/shared/types";
 
 
@@ -12,13 +12,29 @@ const App = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
+  const [isTopOfPage, setIsTopofpage] = useState<boolean>(true);
+  //for the top of the page menu
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsTopofpage(true);
+        setSelectedPage(SelectedPage.Home);
+      }
+      if (window.scrollY !== 0) setIsTopofpage(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   
   return (
     <div className="app bg-gray-20 ">
-       <Navbar
+      <Navbar
+        isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage} page={""} isMenuToggled={false} isTopOfPage={false}  />
-      {/* <Home setSelectedPage={setSelectedPage} />
+        setSelectedPage={setSelectedPage} page={""} isMenuToggled={false}   />
+      <Home setSelectedPage={setSelectedPage} />
+      <Benefits setSelectedPage={setSelectedPage} />
+      {/* 
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
@@ -29,4 +45,5 @@ const App = () => {
  );
 }
 export default App;
-//1.30
+//nav bar tot 1.44 
+//time 2.18//

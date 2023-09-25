@@ -13,8 +13,6 @@ const Link = ({ page,selectedPage,setSelectedPage }: Props) => {
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
-      
-      
           {page}
     </AnchorLink>
   )

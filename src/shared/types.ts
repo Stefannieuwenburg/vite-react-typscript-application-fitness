@@ -13,3 +13,9 @@ export type Props = {
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
 };
+
+export interface BenefitType{
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}

@@ -1,7 +1,7 @@
 import Navbar from "@/componenten/navbar";
-import Home from "@/componenten/home";
+import Home from "@/pages/home";
 //import OurClasses from "@/scenes/ourClasses";
-import Benefits from "@/componenten/benefits";
+import Benefits from "@/pages/benefits";
 //import ContactUs from "@/scenes/contactUs";
 //import Footer from "@/scenes/footer";
 import { useState, useEffect } from "react";
@@ -46,4 +46,4 @@ const App = () => {
 }
 export default App;
 //nav bar tot 1.44 
-//time 2.18//
+//time 2.30//

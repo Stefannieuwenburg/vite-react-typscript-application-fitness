@@ -1,10 +1,15 @@
-# React + TypeScript + Vite
-This template boiler plate provides a application build whit typeScript and React/Vite inside a tailwind project
+
+# This application is build whit typeScript and React/Vite inside a tailwind project
+
+Some background information why this project and what i have lurn from it:
+
+just to make sure that i understand good the basics of typescript and tailwind.
+in this training project i have lurn some new features whit typscript and some new imports from framer motions that i have to try out more in new projects.
+ilove to play a round whit vite and its easy to set up for some show case projecten.
 
 # Tools
 npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react
 npm i -D @types/react-anchor-link-smooth-scroll@1.0.2 @types/node
-
 React: https://reactjs.org/
 Typescript: https://www.typescriptlang.org/
 Typescript Types vs Interfaces: https://tinyurl.com/typescripttypesvs...
@@ -19,6 +24,11 @@ Form Submit: https://formsubmit.co/
 React Anchor Link smooth Scroll: https://github.com/mauricevancooten/r...
 Cloudflare Pages: https://pages.cloudflare.com/
 
+# npm istall
+npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react
+npm i -D @types/react-anchor-link-smooth-scroll@1.0.2 @types/node
+
+# configuration options
 
 Currently, two official plugins are available:
 

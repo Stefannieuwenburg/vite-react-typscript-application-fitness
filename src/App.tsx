@@ -45,5 +45,5 @@ const App = () => {
  );
 }
 export default App;
-//nav bar tot 1.44 
-//time 2.30//
+
+//time 2.50//

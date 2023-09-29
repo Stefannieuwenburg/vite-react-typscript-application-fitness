@@ -1,8 +1,7 @@
-# React + TypeScript + Vite
-
 # This template boiler plate provides a application build whit typeScript and React/Vite inside a tailwind project
 
-# some background information why this project and what i have lurn from it:
+some background information why this project and what i have lurn from it:
+
 just to make sure that i understand good the basics of typescript and tailwind.
 in this training project i have lurn some new features whit typscript and some new imports from framer motions that i have to try out more in new projects.
 ilove to play a round whit vite and its easy to set up for some show case projecten.

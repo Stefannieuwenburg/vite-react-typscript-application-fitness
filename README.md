@@ -1,5 +1,5 @@
 # React + TypeScript + Vite
-This template boiler plate provides a application build whit typeScript and React/Vite inside a tailwind project
+This application is build whit typeScript and React/Vite inside a tailwind project
 
 # Tools
 npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react

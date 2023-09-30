@@ -1,6 +1,6 @@
 import Navbar from "@/componenten/navbar";
 import Home from "@/pages/home";
-//import OurClasses from "@/scenes/ourClasses";
+import OurClasses from "@/pages/ourclasses";
 import Benefits from "@/pages/benefits";
 //import ContactUs from "@/scenes/contactUs";
 //import Footer from "@/scenes/footer";
@@ -34,9 +34,8 @@ const App = () => {
         setSelectedPage={setSelectedPage} page={""} isMenuToggled={false}   />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
-      {/* 
-      <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      {/* 
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
         */}
@@ -46,4 +45,4 @@ const App = () => {
 }
 export default App;
 
-//time 2.50//
+//time 3.01 our classes page//

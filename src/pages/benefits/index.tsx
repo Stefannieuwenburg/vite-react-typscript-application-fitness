@@ -3,8 +3,9 @@ import { SelectedPage , BenefitType} from "@/shared/types";
 import { motion } from "framer-motion";
 import { HText } from "@/shared/Htext";
 import Benefit from "./Benefit";
-import benefits from "@/data";
-
+import benefits from "@/data/benefitsData";
+import { ActionButton } from "@/shared/ActionButton";
+import BenefitsGraphic from "@/assets/BenefitPageGraphic.png";
 
 
 
@@ -45,6 +46,32 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         />
                     ))}
                 </div>
+                {/* Image and text*/}
+                <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+                    {/* image*/}
+                    <img className="mx-auto" alt="benefitsImage" src={BenefitsGraphic}/>
+
+                    {/* Text*/}
+                    <div>
+                        {/* Title*/}
+                        <div className={'relative'}>
+                            <div>
+                                <HText>MILLIONS OF HAPPY MEMBERS GETTING {" "}</HText>
+                                <span className="text-primary-600">FIT.</span>
+                                </div>
+                        </div>
+                        {/* Description*/}
+                        <div className="text-primary-600 my-5" >
+                            <p>Je inschrijven bij Basic-Fit is een hele goede eerste zet. De volgende stap is je routine vinden! Basic-Fit helpt jou hierbij. Want als je gemotiveerd bent en blijft, ben je zeker op weg naar succes om van fitness jouw basic te maken. Na een korte online intake krijg je een persoonlijk trainingsschema voor de eerste 6 weken om je goed op weg te helpen. Daarnaast helpen onze Extra's je om gemotiveerd te blijven.</p>
+                            <p className="text-primary-600 mb-5">Je kan je inschrijven bij Basic-Fit via de app en In al onze clubs vind je de nieuwste apparatuur van Matrix en TechnoGym. Alles wat je nodig hebt voor jouw perfecte workout! Je kunt je eigen workout doen in de trainingszones, of een virtuele les volgen in de GXR zaal voor groepslessen. Veel clubs bieden ook live groepslessen aan! </p>
+                        </div>
+                        {/* Button*/}
+                        <div className="mt-16 relative">
+                            <ActionButton setSelectedPage={setSelectedPage}>JOIN NOW</ActionButton>
+                        </div>
+                    </div>
+                </div>
+
             </motion.div>
         </section>
         

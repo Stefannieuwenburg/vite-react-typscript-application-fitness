@@ -1,11 +1,11 @@
 
 import { SelectedPage , BenefitType} from "@/shared/types";
 import { motion } from "framer-motion";
-import { HText } from "@/shared/Htext";
+import { Htext } from "@/shared/Htext";
 import Benefit from "./Benefit";
 import benefits from "@/data/benefitsData";
 import { ActionButton } from "@/shared/ActionButton";
-import BenefitsGraphic from "@/assets/BenefitPageGraphic.png";
+import BenefitsGraphic from "@/assets/Girls middle.png";
 
 
 
@@ -28,7 +28,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}>
-                 <HText>MORE THAN JUST A GYM</HText> 
+                 <Htext>BASIC-FIT IS MORE THAN JUST A GYM</Htext> 
                     <p className="my-5 text-m">we provide world class fitness equipment,
                        world class trainers and classes to get you to your ultimate fitness goals with ease,
                       And we have everything you need to live a healthy lifestyle
@@ -47,7 +47,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     ))}
                 </div>
                 {/* Image and text*/}
-                <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+                <div className="mt-16 items-center justify-between gap-10 md:mt-30 md:flex">
                     {/* image*/}
                     <img className="mx-auto" alt="benefitsImage" src={BenefitsGraphic}/>
 
@@ -56,14 +56,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         {/* Title*/}
                         <div className={'relative'}>
                             <div>
-                                <HText>MILLIONS OF HAPPY MEMBERS GETTING {" "}</HText>
-                                <span className="text-primary-600">FIT.</span>
+                                <Htext>MILLIONS OF HAPPY MEMBERS GETTING FIT BY BASIC-FIT{" "}</Htext>
+                               
                                 </div>
                         </div>
                         {/* Description*/}
                         <div className="text-primary-600 my-5" >
-                            <p>Je inschrijven bij Basic-Fit is een hele goede eerste zet. De volgende stap is je routine vinden! Basic-Fit helpt jou hierbij. Want als je gemotiveerd bent en blijft, ben je zeker op weg naar succes om van fitness jouw basic te maken. Na een korte online intake krijg je een persoonlijk trainingsschema voor de eerste 6 weken om je goed op weg te helpen. Daarnaast helpen onze Extra's je om gemotiveerd te blijven.</p>
-                            <p className="text-primary-600 mb-5">Je kan je inschrijven bij Basic-Fit via de app en In al onze clubs vind je de nieuwste apparatuur van Matrix en TechnoGym. Alles wat je nodig hebt voor jouw perfecte workout! Je kunt je eigen workout doen in de trainingszones, of een virtuele les volgen in de GXR zaal voor groepslessen. Veel clubs bieden ook live groepslessen aan! </p>
+                            <p>Registering with Basic-Fit is a very good first move. The next step is finding your routine! Basic-Fit helps you with this. Because if you are and remain motivated, you are certainly on your way to success by making fitness your basic. After a short online intake, you will receive a personal training schedule for the first 6 weeks to help you get started. In addition, our Extras help you stay motivated</p>
+                            <p className="text-primary-600 mb-5"> You can register with Basic-Fit via the app and in all our clubs you will find the latest equipment from Matrix and TechnoGym. Everything you need for your perfect workout! You can do your own workout in the training zones, or take a virtual lesson in the GXR room for group lessons. Many clubs also offer live group lessons!</p>
                         </div>
                         {/* Button*/}
                         <div className="mt-16 relative">

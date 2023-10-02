@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Logo from "@/assets/Logo.png";
+import Logo from "@/assets/Basic-Fit-logo.png";
 import Link from "./Link";
 import {Props} from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -16,14 +16,14 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
   return (
     <nav>
       <div className={`${navbarBackground} ${flexBetween}fixed top-10 z-10 w-full  justify-between `}>
-            <div className={`${flexBetween}w-full gap-6`}>
-                <div className={`${flexBetween}w-full gap-24`}>
+            <div className={`${flexBetween}w-full gap-20`}>
+                <div className={`${flexBetween}w-full gap-20`}>
                   {/* left side*/}
                       <img src={Logo} alt="logo" />
                  {/*right side*/}
             {isAboveMediumScreens ? (
-                      <div className={`${flexBetween}w-full gap-6`}>
-                          <div className={`${flexBetween}w-full gap-6 text-m`}>
+                      <div className={`${flexBetween}w-full gap-20`}>
+                          <div className={`${flexBetween}w-full gap-8 text-m`}>
                               <Link page="Home"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false} />
@@ -44,7 +44,7 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
               </div>
                 ):(
                 <button 
-                   className='rounded-full bg-secondary-500 p-2' onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                   className='rounded-full bg-secondary-600 p-2 ' onClick={() => setIsMenuToggled(!isMenuToggled)}>
                   <Bars3Icon className= 'w-6 h-6 text-white' />
                 </button>
                 )}
@@ -53,11 +53,11 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
       </div>  
       {/*mobile menu */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed richt-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed richt-0 bottom-0 z-40 h-full w-[300px] bg-gray-50 drop-shadow-xl">
            {/*close icon */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-             <XMarkIcon className="h-6 w-6 text-gray-400"/>
+             <XMarkIcon className="h-6 w-6 text-secondary-600"/>
             </button>
           </div>
            {/*menu items */}

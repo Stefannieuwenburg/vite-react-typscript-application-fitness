@@ -1,11 +1,15 @@
+import { useState, useEffect } from "react";
+
+
 import Navbar from "@/componenten/navbar";
+import { SelectedPage } from "@/shared/types";
 import Home from "@/pages/home";
 import OurClasses from "@/pages/ourclasses";
 import Benefits from "@/pages/benefits";
+import Footer from "./componenten/footer";
 //import ContactUs from "@/scenes/contactUs";
 //import Footer from "@/scenes/footer";
-import { useState, useEffect } from "react";
-import { SelectedPage } from "@/shared/types";
+
 
 
 const App = () => {
@@ -35,9 +39,12 @@ const App = () => {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <Footer setSelectedPage={function (_value: SelectedPage): void {
+        throw new Error("Function not implemented.");
+      } } />
       {/* 
       <ContactUs setSelectedPage={setSelectedPage} />
-      <Footer />
+    
         */}
     </div>
    
@@ -45,4 +52,4 @@ const App = () => {
 }
 export default App;
 
-//time 3.01 our classes page//
+//time 3.20 min contact page//

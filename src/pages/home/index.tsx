@@ -1,7 +1,7 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import { ActionButton } from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
+import HomePageText from "@/assets/BFIT.AS_BIG.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
@@ -19,7 +19,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="home" className="gap-16 bg-black-200 py-10 md:h-full md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
        {/* motion.div is used for animation move */}
       <motion.div
@@ -91,7 +91,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[140px] w-full bg-primary-100 py-10">
+        <div className="h-[140px] w-full bg-gray-50 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
               <img alt="redbull-sponsor" src={SponsorRedBull} />

@@ -1,5 +1,5 @@
 
-import { SelectedPage , BenefitType} from "@/shared/types";
+import { SelectedPage, BenefitType } from "@/shared/types";
 import { motion } from "framer-motion";
 import { Htext } from "@/shared/Htext";
 import Benefit from "./Benefit";
@@ -10,33 +10,33 @@ import BenefitsGraphic from "@/assets/Girls middle.png";
 
 
 type Props = {
-   setSelectedPage:(value:SelectedPage)=>void 
+    setSelectedPage: (value: SelectedPage) => void
 };
 
 const Benefits = ({ setSelectedPage }: Props) => {
     return (
-      
+
         <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
             <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
                 {/* Header*/}
                 <motion.div className="md:m-5 md:w-3/5"
-                initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: 0.5, duration: 1.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}>
-                 <Htext>BASIC-FIT IS MORE THAN JUST A GYM</Htext> 
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ delay: 0.5, duration: 1.5 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0 },
+                    }}>
+                    <Htext> <span className="text-black-100">ITS JUST MORE THAN A GYM</span> BASIC-FIT</Htext>
                     <p className="my-5 text-m">we provide world class fitness equipment,
-                       world class trainers and classes to get you to your ultimate fitness goals with ease,
-                      And we have everything you need to live a healthy lifestyle
+                        world class trainers and classes to get you to your ultimate fitness goals with ease,
+                        And we have everything you need to live a healthy lifestyle
                     </p>
                 </motion.div>
                 {/* Benfits*/}
                 <div className="md:flex items-center justify-between gap-8 mt-5">
-                    {benefits.map((benefit:BenefitType) => (
+                    {benefits.map((benefit: BenefitType) => (
                         <Benefit
                             key={benefit.title}
                             icon={benefit.icon}
@@ -49,16 +49,16 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 {/* Image and text*/}
                 <div className="mt-16 items-center justify-between gap-10 md:mt-30 md:flex">
                     {/* image*/}
-                    <img className="mx-auto" alt="benefitsImage" src={BenefitsGraphic}/>
+                    <img className="mx-auto" alt="benefitsImage" src={BenefitsGraphic} />
 
                     {/* Text*/}
                     <div>
                         {/* Title*/}
                         <div className={'relative'}>
                             <div>
-                                <Htext>MILLIONS OF HAPPY MEMBERS GETTING FIT BY BASIC-FIT{" "}</Htext>
-                               
-                                </div>
+                                <Htext><span className="text-black-100">MILLIONS OF HAPPY MEMBERS GETTING FIT BY </span> BASIC-FIT{" "}</Htext>
+
+                            </div>
                         </div>
                         {/* Description*/}
                         <div className="text-primary-600 my-5" >
@@ -67,15 +67,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         </div>
                         {/* Button*/}
                         <div className="mt-16 relative">
-                            <ActionButton setSelectedPage={setSelectedPage}>JOIN NOW</ActionButton>
+                            <ActionButton setSelectedPage={setSelectedPage}>Join Now</ActionButton>
                         </div>
                     </div>
                 </div>
 
             </motion.div>
         </section>
-        
-  )
+
+    )
 }
 
 export default Benefits;

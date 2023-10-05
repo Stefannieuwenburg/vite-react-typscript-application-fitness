@@ -91,7 +91,7 @@ const Home = ({ setSelectedPage }: Props) => {
 
       {/* SPONSORS */}
       {isAboveMediumScreens && (
-        <div className="h-[140px] w-full bg-gray-50 py-10">
+        <div className="h-[140px] w-full bg-white-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
               <img alt="redbull-sponsor" src={SponsorRedBull} />

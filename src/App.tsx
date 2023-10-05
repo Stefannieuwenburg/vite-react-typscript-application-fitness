@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 
-
 import Navbar from "@/componenten/navbar";
 import { SelectedPage } from "@/shared/types";
 import Home from "@/pages/home";
 import OurClasses from "@/pages/ourclasses";
 import Benefits from "@/pages/benefits";
 import Footer from "./componenten/footer";
-//import ContactUs from "@/scenes/contactUs";
+import ContactUs from "@/pages/contactUs";
 //import Footer from "@/scenes/footer";
 
 
@@ -31,7 +30,7 @@ const App = () => {
   }, []);
   
   return (
-    <div className="app bg-gray-20 ">
+    <div className="app bg-white-100 ">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -39,17 +38,14 @@ const App = () => {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
       <Footer setSelectedPage={function (_value: SelectedPage): void {
         throw new Error("Function not implemented.");
       } } />
-      {/* 
-      <ContactUs setSelectedPage={setSelectedPage} />
-    
-        */}
     </div>
    
  );
 }
 export default App;
 
-//time 3.20 min contact page//
+//time 3.19 min contact page//

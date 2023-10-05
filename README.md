@@ -17,6 +17,7 @@ Framer Motion: https://www.framer.com/docs/introduct...
 Form Submit: https://formsubmit.co/
 React Anchor Link smooth Scroll: https://github.com/mauricevancooten/r...
 Cloudflare Pages: https://pages.cloudflare.com/
+npm i react-hook-form: https://react-hook-form.com/get-started
 
 # npm istall
 npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react

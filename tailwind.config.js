@@ -3,6 +3,7 @@ export const content = ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"];
 export const theme = {
   extend: {
     colors: {
+      "white-100": "#ffffff",
       "gray-100": "#dadce0",
       "gray-200": "#bcc0c3",
       "gray-300": "#757575",
@@ -20,7 +21,6 @@ export const theme = {
       "secondary-600": "#6131ad",
     },
     backgroundImage: (theme) => ({
-      "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
       "mobile-home": "url('./assets/HomePageGraphic.png')",
     }),
     fontFamily: {
@@ -29,9 +29,6 @@ export const theme = {
     },
     content: {
       evolvetext: "url('./assets/EvolveText.png')",
-      abstractwaves: "url('./assets/AbstractWaves.png')",
-      sparkles: "url('./assets/Sparkles.png')",
-      circles: "url('./assets/Circles.png')",
     },
   },
   screens: {
@@ -40,4 +37,4 @@ export const theme = {
     md: "1060px",
   },
 };
-export const plugins = [];
+export const plugins = ['prettier-plugin-tailwindcss'];

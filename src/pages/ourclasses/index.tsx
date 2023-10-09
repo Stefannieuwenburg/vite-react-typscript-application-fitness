@@ -4,8 +4,6 @@ import { Htext } from "@/shared/Htext";
 import image1 from "@/assets/image1.png";
 import image2 from "@/assets/image2.png";
 
-
-
 type Props = {
     setSelectedPage: (value: SelectedPage) => void
 }
@@ -30,8 +28,6 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                             At Basic-Fit you get many options for training in the gym. But we also believe that you can get fit wherever you want. Love for what you do, when you want and where you want, is the key to achieving your goals. Whether you want to train at the club, at home or outside, you decide. We are here to help you. And with the Basic-Fit app this becomes even more fun and easier!
                         </p>
                     </div>
-                    {/* check fix for smal screens flex box*/}
-                </motion.div>
                 <div className="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
                     <div className="container mx-auto">
                         <div className="-mx-4 flex flex-wrap">
@@ -81,7 +77,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
+                </motion.div>
             </motion.div>
         </section>
     )

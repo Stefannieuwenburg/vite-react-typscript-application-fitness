@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Logo from "@/assets/Basic-Fit-logo.png";
-import Link from "./Link";
+import Link from "../link";
 import {Props} from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { ActionButton } from '@/shared/ActionButton';
@@ -22,7 +22,7 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
                       <img src={Logo} alt="logo" />
                  {/*right side*/}
             {isAboveMediumScreens ? (
-                      <div className={`${flexBetween}w-full gap-20`}>
+              <div className={`${flexBetween}w-full gap-20`}>
                           <div className={`${flexBetween}w-full gap-8 text-m`}>
                               <Link page="Home"
                   selectedPage={selectedPage}
@@ -30,10 +30,10 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
                               <Link page="Benefits"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false} />
-                              <Link page="Our Classes"
+                              <Link page="OurClasses"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false} />
-                              <Link page="Contact Us"
+                              <Link page="ContactUs"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false}/>
                           </div>
@@ -69,10 +69,10 @@ const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}: Props) => {
                               <Link page="Benefits"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false} />
-                              <Link page="Our Classes"
+                              <Link page="OurClasses"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false} />
-                              <Link page="Contact Us"
+                              <Link page="ContactUs"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage} isMenuToggled={false} isTopOfPage={false}/>
                           </div>

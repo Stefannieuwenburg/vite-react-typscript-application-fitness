@@ -1,8 +1,8 @@
 export enum SelectedPage {
-    Home = "Home",
-    Benefits = "Benefits",
-    OurClasses = "Ourclasses",
-    ContactUs = "Contact",
+    Home = "home",
+    Benefits = "benefits",
+    OurClasses = "ourclasses",
+    ContactUs = "contactus",
 }
 
 export type Props = {

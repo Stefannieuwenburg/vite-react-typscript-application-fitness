@@ -48,4 +48,4 @@ const App = () => {
 }
 export default App;
 
-//time 3.19 min contact page//
+//time 3.45 min contact page//

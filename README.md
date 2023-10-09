@@ -1,8 +1,11 @@
 # React + TypeScript + Vite
 i have Build a Complete Typescript React Fitness Application from scratch.
+
 This application is build whit typeScript and React/Vite inside a tailwind project
-what i have lurned in this project is the following:
-test out tailwind css in a full project with typescript to show that i have the skill set to build whit typescript and react inside a tailwind project.
+
+what i have lurned from this project is the following.
+
+tailwind css in a full project with typescript to show that i have the skill set to build whit typescript inside react.
 
 # Tools used in this project
 npm i framer-motion react-anchor-link-smooth-scroll@1.0.12 @heroicons/react
@@ -21,3 +24,5 @@ React Anchor Link smooth Scroll: https://github.com
 Cloudflare Pages: https://pages.cloudflare.com/
 npm i react-hook-form: https://react-hook-form.com/get-started
 
+#
+show case project.

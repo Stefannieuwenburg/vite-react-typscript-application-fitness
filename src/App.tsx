@@ -9,8 +9,6 @@ import Footer from "./pages/footer";
 import ContactUs from "@/pages/contactUs";
 
 
-
-
 const App = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home

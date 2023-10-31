@@ -1,4 +1,5 @@
 # React + TypeScript + Vite
+
 i have Build a Complete Typescript React Fitness Application from scratch.
 
 This application is build whit typeScript and React/Vite inside a tailwind project
@@ -40,3 +41,4 @@ npm i react-hook-form: https://react-hook-form.com/get-started
 
 #
 show case project.
+vite-react-typscript-application-fitness
